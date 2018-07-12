@@ -9,7 +9,7 @@ require('find-java-home')(function(err, home){
   var so,soFiles;
   var binary;
 
-    home = "jdk/jre-9.0.4.jre/Contents/Home";
+    home = "../jdk/jre-9.0.4.jre/Contents/Home";
   if(home){
     dll = glob.sync('**/jvm.dll', {cwd: home})[0];
     dylib = glob.sync('**/libjvm.dylib', {cwd: home})[0];
