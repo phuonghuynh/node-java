@@ -115,7 +115,7 @@
                   ],
                   'libraries': [
                     '-L<(javalibdir)',
-                    '-Wl,<(javalibdir)',
+                    '-Wl,-rpath,<(javalibdir)',
                     '-ljvm'
                   ],
                 },
